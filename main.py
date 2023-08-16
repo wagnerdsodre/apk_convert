@@ -16,7 +16,7 @@ class Interface(BgBoxLayout):
         print(result[0])
         polarity = str(result[0])
         subjectivity = str(result[1])
-        self.ids.label.text = f'Polarity:{polarity} \n Subjectivity:{subjectivity} '
+        self.ids.label.text = f'Polarity :{polarity} \n Subjectivity :{subjectivity} '
 
     def analyzer(self):
         params = json.dumps({'sentence': str(self.ids.textInput.text)})
