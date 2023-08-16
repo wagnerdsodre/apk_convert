@@ -1,0 +1,39 @@
+#:kivy 2.2.0
+#: import BgBoxLayout Custom_Layouts
+Interface:
+    hex_code:"#1e45f3"
+    alpha: 0.3
+    orientation:'vertical'
+    padding:[10,10,10,10]
+    spacing: 12
+    BgBoxLayout:
+        hex_code:"#1e45f3"
+        alpha: 0.2
+        padding:[10,10,10,10]
+        spacing: 12
+        size_hint: 1, 0.1
+        Label:
+            text:"Analyser"
+            #size_hint: 1, 0.5
+    TextInput:
+        id:textInput
+        size_hint: 1, 0.7
+    BgBoxLayout:
+        orientation: 'horizontal'
+        hexa_code: "#c2c2c2"
+        alpha: 1
+        padding:[10,10,10,10]
+        spacing: 12
+        size_hint: 1, 0.1
+        Button:
+            text:"Submit"
+            on_press: root.analyzer()
+        Button:
+            text:"Clear"
+            on_press: root.clear()
+    Label:
+        id:label
+        text:"Result"
+        size_hint: 1,0.2
+
+
