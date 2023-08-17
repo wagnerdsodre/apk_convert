@@ -18,8 +18,8 @@ jobs:
           path: master
 
       - name: Build with Buildozer
-        uses: ./master
-        id: buildozer
+        uses: ./master 
+        id: wagnerdsodre/buildozer-action@v1
         with:
           repository_root: master
           workdir: test_app
