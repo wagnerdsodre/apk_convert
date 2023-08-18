@@ -1,15 +1,8 @@
-name: Build
+name: CI
 on:
   push:
-    branches-ignore:
-      - data
-      - gh-pages
-    tags:
-      - '**'
-  pull_request:
-    branches-ignore:
-      - data
-      - gh-pages
+    branches: [ master ]
+    branches: [ master ]
 
 jobs:
   # Build job. Builds app for Android with Buildozer
